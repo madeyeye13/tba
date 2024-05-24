@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailored By Adunni</title>
+    <meta name="description" content="Fashion Company">
+
+
+
+    <!--=====Cascading Style Sheet====-->
+
+    <style>
+
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: linear-gradient(0deg, rgba(255, 227, 227, 0.9), rgba(255, 227, 227, 0.9)), url(image/gio-gix-1RNr1pLBeR4-unsplash.jpg);
+            overflow: hidden;
+            background-position: center;
+            background-size: cover;
+            height: 100vh; 
+            
+        }
+
+
+
+        .header {
+            max-width: 100%;
+            height: 5rem;
+            display: flex;
+            align-content: center;
+            justify-content: space-between;
+            padding: 5%;
+            background-size: cover;
+            color: white;
+        }
+
+        .logo img {
+            width: 80px;
+
+        }
+
+        .logo a {
+            text-decoration: none;
+            color: white;
+        }
+
+
+        .bdy{
+            color: rgb(10, 10, 10);
+            font-family: "Josefin Sans", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            top: 170px;
+        }
+
+
+        .launch-time{
+            display: flex;
+            align-items: center;
+            margin-left: 20px;
+            padding-top: 10px;
+            
+        }
+
+        .launch-time div {
+            flex-basis: 100px;
+            margin-right: 20px;
+        }
+
+        .launch-time p{
+            font-size: 50px;
+            margin-bottom: -8px;
+        }
+
+        .bdy h3{
+            font-size: 25px;
+            padding-top: 10px;
+        }
+
+        .bdy h3 span {
+            color: #ff1139;
+        }
+
+        .bdy h6 {
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+
+        /*==========Whatsapp Icon=========*/
+
+
+    .whatsapp-container {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+    }
+    
+    .whatsapp-btn {
+        display: block;
+        width: 60px;
+        height: 60px;
+        background-color: #107f39;
+        border-radius: 50%;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        animation: blink 1s infinite alternate;
+    }
+    
+    .icon {
+        width: 40px;
+        height: 40px;
+        margin-top: 10px;
+    }
+    
+    @keyframes blink {
+        from {
+        opacity: 1;
+        }
+        to {
+        opacity: 0.5;
+        }
+    }
+    
+
+
+
+    
+
+
+
+
+    </style>
+
+
+
+
+
+    </head>
+
+    <body>
+
+        <header class="header">
+
+            <div class="logo">
+    
+    
+            <a href="index.html">
+                <img src="image/Logo.png">
+            </a>
+    
+    
+            </div>
+    
+    
+    
+        </header>
+    
+    
+        <section id="bddy">
+    
+    
+            
+            <div class="bdy">
+    
+                <h6>Website Under Development</h6>
+                <h3>We are <span>Launching</span> Soon</h3>
+        
+                <div class="launch-time">
+        
+        
+                    <div>
+                        <p id="days">00</p>
+                        <span>Days</span>
+                    </div>
+        
+        
+                    <div>
+                        <p id="hours">00</p>
+                        <span>Hours</span>
+                    </div>
+        
+        
+                    <div>
+                        <p id="minutes">00</p>
+                        <span>Minutes</span>
+                    </div>
+        
+        
+                    <div>
+                        <p id="seconds">00</p>
+                        <span>Seconds</span>
+                    </div>
+    
+    
+                    <div class="whatsapp-container">
+                        <a href="https://wa.link/+2347034531168" target="_blank" class="whatsapp-btn">
+                          <img src="image/whatsapp-icon.png" alt="WhatsApp Icon" class="icon">
+                        </a>
+                    </div>
+    
+        </section>
+
+
+
+
+         <!--=====Javascript====-->
+
+   <script>
+
+    var countDownDate = new Date("June 20, 2024 00:00:00").getTime();
+    var x = setInterval(function(){
+        var now = new Date().getTime();
+        var distance = countDownDate - now;
+
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
+
+    },1000)
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+        
+    </body>
+
+
+
+
+
+</html>
