@@ -1,0 +1,421 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+   /*==========Whatsapp Icon=========*/
+
+
+   .whatsapp-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-btn {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #107f39;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    animation: blink 1s infinite alternate;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+@keyframes blink {
+    from {
+    opacity: 1;
+    }
+    to {
+    opacity: 0.5;
+    }
+}
+
+
+
+/*=============MainBody==========*/
+
+
+body {
+    background-color: white;
+    max-width: 100%;
+}
+
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.nationwide {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap: 20px;
+    border: 1px solid;
+    background-color: white;
+    height: 40px;
+}
+
+.nationwide .material-symbols-outlined{
+    transform: scaleX(-1);
+    display: inline-block;
+    font-size: 30px;
+    position: relative;
+    top: 5px;
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 200,
+    'GRAD' 0,
+    'opsz' 40
+    
+    
+}
+
+.nationwide h5 {
+    font-family: "Josefin Sans", sans-serif;
+    position: relative;
+    top: 13px;
+    font-weight: 400;
+}
+
+
+
+
+/*=============Header==========*/
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+
+.header1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    width: 100%;
+    gap: 50px;
+    box-shadow: 0 2px 0px rgba(0, 0, 0, 0.17);
+    background-color: white;
+    
+}
+
+.header1 .material-symbols-outlined {
+    font-size: 40px;
+}
+
+.sidebar{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.125);
+    width: 250px;
+    padding-left: 30px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 40px;
+    font-family: "Josefin Sans", sans-serif;
+    list-style: none;
+    
+    top: 0;
+    z-index: 999;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+}
+
+.header1 a {
+    color: black;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar li:hover{
+    background-color: rgb(255, 187, 187);
+    width: 20%;
+}
+
+.sidebar .material-symbols-outlined{
+    font-size: 36px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 40
+}
+
+
+
+
+/*-----------------------HeroImage for about------------------------*/
+
+
+.contact-head-head {
+	position: absolute;
+    opacity: 9;
+	background-position: center;
+	background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -2;
+    background-image: url("image/abouthero.jpg");
+    position:relative;
+    padding-top:400px;
+    /* text-align: ; */
+    background-blend-mode: overlay;
+    background-color: rgba(11, 11, 11, 0.659);
+    object-fit: fill;
+    top:-40px;
+    padding-left: 20px;
+
+  }
+
+
+  .contact-head-head h1{
+    font-size: 50px;
+    font-weight: 300;
+    color:white;
+    position:relative;
+    top:-160px;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+
+#combo {
+    font-family: "Josefin Sans", sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+}
+
+#combo h1 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+#combo span {
+    color: #ff00ff;
+}
+
+#combo p {
+    font-weight: 350;
+    font-size: 17px;
+}
+
+
+
+/*----------------------Founder-----------------*/
+
+
+
+
+#team {
+    font-family: "Josefin Sans", sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+#team h1 {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    color: #ff00ff;
+}
+
+#team p {
+    font-weight: 350;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+
+.team-card h2{
+    color: #ff00ff;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+.faq-section {
+    max-width: 800px;
+    margin-bottom: 20px;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+.faq-section h1 {
+    padding-left: 20px;
+    margin-bottom: 40px;
+    margin-top: 80px;
+}
+
+
+
+
+
+.faq-header {
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-header:hover {
+    background-color: #ffe6e6;
+}
+
+.faq-header span {
+    font-size: 20px;
+}
+
+
+.faq-icon {
+    font-size: 18px;
+    transition: transform 0.3s ease;
+    color: #ff00ff;
+}
+.faq-content {
+    padding: 0 15px;
+    border: 1px solid #ddd;
+    border-top: none;
+    display: none;
+}
+
+.faq-content ul {
+    padding-left: 20px;
+}
+.faq-content li {
+    margin-bottom: 10px;
+
+}
+
+.faq-content p {
+    margin: 15px 0 ;
+    line-height: 20px;
+}
+.active .faq-content {
+    display: block;
+}
+.active .faq-icon {
+    transform: rotate(180deg);
+}
+
+
+
+/*-------------------Footer-------------------*/
+
+
+
+
+
+footer{
+    padding-left: 20px;
+    background-color:#ff00ff10;
+    font-family: "Josefin Sans", sans-serif;
+    padding-top: 50px;
+    position: relative;
+    top: 80px;
+  }
+
+  
+  footer img{
+  width: 100px;
+  padding-bottom: 10px;
+  }
+  
+  .foot-info-social, .foot-info{
+    padding-top:50px;
+  }
+  
+  .foot-social span{
+  display:flex;
+  flex-direction: row;
+  gap: 20px;
+  padding-top:10px;
+  }
+  
+  .foot-social i{
+    color:#ff00ff;
+   font-size:20px;
+}
+  
+  
+    .foot-info-mother{
+      padding-top:10px;
+      display:flex;
+      flex-direction: column;
+      gap: 20px;
+  
+    }
+  
+    .foot-info-mother i{
+        color:#ff00ff;
+      position :relative;
+      top: 0px;
+    }
+  
+  
+    .foot-info-mother span{
+      display:flex;
+      flex-direction: row;
+      gap: 20px;
+  
+    }
+  
+    .copyright{
+      font-size:7px;
+      text-align:center;
+      padding-top:40px;
+      color:#1e1e1e;
+    }
+
+    footer a {
+        color: #202020;
+      }
+  
